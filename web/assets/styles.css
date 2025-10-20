@@ -1,0 +1,46 @@
+
+:root{
+  --bg:#0b0d10; --card:#12151a; --muted:#9aa4b2; --fg:#e8eef6;
+  --s2:#3fb950; --s1:#e3b341; --s0:#6b7280; --accent:#60a5fa; --chip:#1f2937;
+}
+*{box-sizing:border-box}
+body{margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--fg); background:var(--bg)}
+header{padding:16px 20px; border-bottom:1px solid #1f2937; background:#0e1116}
+h1{margin:0 0 4px 0; font-size:20px}
+.subtitle{margin:0; color:var(--muted)}
+.layout{display:grid; grid-template-columns:320px 1fr; gap:12px; padding:12px}
+.left .panel{background:var(--card); border:1px solid #1f2937; border-radius:12px; padding:12px}
+.controls{display:grid; gap:8px}
+.controls label{display:grid; gap:4px; color:var(--muted); font-size:12px}
+.controls input, .controls select{background:#0b1220; color:var(--fg); border:1px solid #1f2937; border-radius:8px; padding:8px}
+.buttons{display:flex; gap:8px; align-items:center; flex-wrap:wrap}
+button{background:#0b1220; color:var(--fg); border:1px solid #1f2937; border-radius:8px; padding:6px 10px; cursor:pointer}
+button:hover{border-color:#374151}
+.toggle{display:flex; gap:6px; align-items:center; font-size:12px; color:var(--muted)}
+.cs-list{list-style:none; margin:10px 0 0 0; padding:0; max-height:48vh; overflow:auto}
+.cs-item{padding:8px; border-bottom:1px solid #1f2937; cursor:pointer}
+.cs-item:hover{background:#0b1220}
+.cs-item.active{background:#111827; border-left:3px solid var(--accent); padding-left:5px}
+.chips{display:flex; gap:6px; flex-wrap:wrap; margin:8px 0}
+.chip{background:var(--chip); border:1px solid #374151; border-radius:999px; padding:4px 10px; display:flex; gap:6px; align-items:center}
+.chip button{padding:0 6px; border:none; background:none; color:var(--muted)}
+.legend{margin-top:6px; color:var(--muted); display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.dot{width:10px; height:10px; border-radius:50%; display:inline-block}
+.s2{background:var(--s2)} .s1{background:var(--s1)} .s0{background:var(--s0)}
+.right{display:grid; gap:12px}
+.calc-container{display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:10px}
+.calc-node{background:var(--card); border:1px solid #1f2937; border-radius:10px; padding:10px; position:relative}
+.calc-node .title{font-weight:600}
+.badges{margin-top:6px; display:flex; gap:6px; flex-wrap:wrap}
+.badge{font-size:11px; border-radius:6px; padding:2px 6px; border:1px solid #1f2937; background:#0b1220; color:var(--muted)}
+.badge.s2{color:#d1fae5; border-color:var(--s2); box-shadow:0 0 0 1px var(--s2) inset}
+.badge.s1{color:#fff7ed; border-color:var(--s1); box-shadow:0 0 0 1px var(--s1) inset}
+.badge.s0{color:#e5e7eb; border-color:var(--s0); box-shadow:0 0 0 1px var(--s0) inset}
+.details{background:var(--card); border:1px solid #1f2937; border-radius:10px; padding:12px}
+.details.hidden{display:none}
+.tooltip{position:fixed; pointer-events:none; background:#111827; border:1px solid #1f2937; border-radius:8px; padding:8px; font-size:12px; color:var(--fg); z-index:9999; width:auto; max-width:320px; max-height:220px; overflow-y:auto; overflow-x:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.35); word-wrap:break-word; overflow-wrap:anywhere; word-break:break-word; white-space:normal}
+.tooltip h5{margin:0 0 6px 0; font-size:12px; color:#d1d5db}
+.tooltip .tip-row{display:grid; grid-template-columns:auto 1fr; gap:6px; align-items:start; margin:4px 0}
+.tooltip .tip-row > div{min-width:0}
+.tooltip .strength{width:8px; height:8px; border-radius:50%}
+footer{padding:12px 20px; color:var(--muted); border-top:1px solid #1f2937}

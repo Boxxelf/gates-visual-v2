@@ -1,0 +1,171 @@
+cs_id,calculus_id,strength,rationale
+MLWorkingWithData,CMotivatingTheNeedFor,2,"Isaac Newton's development of core calculus ideas was in part inspired by his wish to understand laws of physics, as in Philosophiæ Naturalis Principia Mathematica. These laws were designed to be consistent with data. Gauss's work on predicting celestial mechanics from data is grounded in calculus. Some of the earliest roots of calculus are grounded in data analysis."
+MLGradientDescent,CMotivatingTheNeedFor,2,Computing derivatives is essential for gradient descent.
+MLRegression,CMotivatingTheNeedFor,2,Regression often tries to minimize the function that represents the sum of squared errors. Finding the minima of a function involves computing derivatives.
+MLClustering,CMotivatingTheNeedFor,1,"In k-means, for instance, the key step is finding the mean of a collection of points, which corresponds to finding the point which minimizes the sum of squared differences."
+MLNeuralNetworks,CMotivatingTheNeedFor,1,"Backpropagation, which is used to train neural networks, is built on calculus."
+MLAdvancedDeepLearning,CMotivatingTheNeedFor,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLOverfittingUnderfitt,CLimitsAtInfinityAndI2,1,"Analyzing the limit of a sequence might come up when graphing a loss function in terms of a hyperparameter or epoch. For example, we might be interested to see if the loss converges or we might be interested in the points where the loss has a local minimum (a trough)."
+MLGradientDescent,CLimitsAtInfinityAndI2,1,Gradient descent is esentially a sequence in the parameter space. We are interested in the convergence of that sequence towards a local minimum of the loss function.
+MLRegularization,CLimitsAtInfinityAndI2,1,"In ridge/lasso regression, in the plot of standardized coefficients in terms of lambda, the coefficient curves will approach zero when lambda will approach infinity."
+MLLearningTheory,CLimitsAtInfinityAndI2,1,"Learning theory topics are typically focused on asymptotic behavior (for example, as the number of samples grows, will we converge on the right model?) This requires understanding the idea of a limit to infinity."
+MLGradientDescent,CMotivatingTheNeedFor2,1,"Gradient descent is based on gradient, which is a vector that consists of (partial) derivatives."
+MLModelEvaluationTechn,CMotivatingTheNeedFor2,1,Understand the sensitivity of model predictions to input changes
+MLGradientDescent,CDefiningTheDerivativ,1,"Understanding gradient descent requires understanding the idea of a gradient as a function that we can use to move along an error surface. Since the gradient generalizes a derivative, understanding the derivative as a function is also helpful here."
+MLNeuralNetworks2,CDefiningTheDerivativ,1,Autodifferentiation is key to backpropagation. It works because neural networks are compositions of basic functions with known derivatives.
+MLAdvancedDeepLearning,CDefiningTheDerivativ,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLGradientDescent,CBasicDifferentiation,1,Performing gradient descent requires calculating (partial) derivatives. This requires one to apply basic differentiation rules.
+MLRegressionProblems,CBasicDifferentiation,1,"To find the values that minimize the loss, we  need to be able to differentiate the loss function."
+MLClassificationProble,CBasicDifferentiation,1,"For some particular models/algorithms used for classification, we typically use differentation to find the extreme values. For other models (for example, discrete models such decision trees), we do not use differentiation to find the extreme values."
+MLNeuralNetworks2,CBasicDifferentiation,1,Autodifferentiation is key to backpropagation. It works because neural networks are compositions of basic functions with known derivatives.
+MLAdvancedDeepLearning,CBasicDifferentiation,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLProbabilisticModels,CBasicDifferentiation,1,"To fit something like Naïve Bayes, you need basic differentiation rules. (You also need Lagrange multipliers, but that is a Calc III topic.)"
+MLTopicModels,CBasicDifferentiation,1,"Topic models are often fit with expectation maximization. Deriving the maximization step requires optimizing a function, often by taking the derivative."
+MLGradientDescent,CProductAndQuotientRu,1,"Performing gradient descent requires calculating (partial) derivatives. This requires one to apply basic differentiation rules, including product and quotient rules."
+MLNeuralNetworks,CTrigonometricDerivat,1,When using sinusoidal and tanh activation functions
+MLAdvancedDeepLearning,CTrigonometricDerivat,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLClassificationProble,CDerivativesOfLogarit,1,"In logistic regression, we need to compute the derivative of the loss function, which is a function that involves exponentials and logs."
+MLNeuralNetworks,CChainRule,1,"Backpropagation updates the weights in a neural network using a process that is makes use of the chain rule. Autodifferentiation key to backpropagation, works because neural networks are compositions of basic functions with known derivatives."
+MLAdvancedDeepLearning,CChainRule,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLOverfittingUnderfitt,CExtremeValues,1,"Analyzing the limit of a sequence might come up when graphing a loss function in terms of a hyperparameter or epoch. For example, we might be interested to see if the loss converges or we might be interested in the points where the loss has a local minimum (a trough)."
+MLGradientDescent,CExtremeValues,1,Gradient descent is esentially a sequence in the parameter space. We are interested in the convergence of that sequence towards a local minimum of the loss function.
+MLRegressionProblems,CExtremeValues,1,"To fit a regression model, we need to optimize a loss function: find the parameter values that minimize the loss (or sometimes maximize the likelihood)"
+MLClassificationProble,CExtremeValues,1,"When using a classification model that is not a discrete model, we need to optimize a loss function or likelihood function, which requires finding the values of the parameters that achieve a min or max. No differentiation is needed when the model is discrete."
+MLProbabilisticModels,CExtremeValues,1,Finding the parameters that maximize the likelihood or the posterior requires finding extreme values of a function.
+MLTopicModels,CExtremeValues,1,Topic models are often fit with expectation maximization. Deriving the maximization step requires finding the extreme value that maximizes  a function.
+MLGradientDescent,CTheShapeOfGraphsConc,1,Gradient descent is esentially a sequence in the parameter space. We are interested in the convergence of that sequence towards a local minimum of the loss function.
+MLGradientDescent,COptimization,1,Gradient descent is all about optimizing a function by using gradients. This is closely related to optimizing a function using derivatives (since the gradient just generalizes the derivative)
+MLRegularization,COptimization,1,There are many settings with non-unique minimizers unless you use regularization.
+MLRegressionProblems,COptimization,1,"To fit the weights for a regression problem, we optimize a loss function by finding a closed form for the min value. This is analogous to other calculus examples of optimization."
+MLClassificationProble,COptimization,1,"To fit a classification problem, we optimize either the likelihood or loss function by setting the parameter values. This is analogous to other calculus examples of optimization."
+MLNeuralNetworks2,COptimization,1,Identifying the weights in a neural network is framed as an optimization problem.
+MLAdvancedDeepLearning,COptimization,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLProbabilisticModels,COptimization,1,"Fitting the parameters of a probabilistic model typically happens via optimization (e.g., finding the parameters to achieve the MAP or MLE )."
+MLGraphicalModels,COptimization,1,Graphical models framed as optimization problems.
+MLTopicModels,COptimization,1,Topic models are often fit with expectation maximization. Deriving the maximization step requires optimizing a function.
+MLGradientDescent,CNewtonSMethod,1,"Explain the difference between first-order and second-order optimization, role of second derivative"
+MLModelEvaluationTechn,CMotivatingTheNeedFor3,1,Area under the curve (AUC) to evaluate ML models; also p-values
+MLRegressionProblems,CMotivatingTheNeedFor3,1,"In linear regression, the value of area under a curve comes up in the computation of the confidence intervals."
+MLClassificationProble,CMotivatingTheNeedFor3,1,Area under the curve metric for classifiers; also the error function for Gaussian data
+MLModelEvaluationTechn,CDefiniteIntegrals,1,"Models are commonly evaluated using the AUC curve, and integrals are helpful for understanding the idea of calculating the area under a curve."
+MLModelEvaluationTechn,CIntegralsOfExponenti,1,Error function for Gaussian data
+MLNeuralNetworks,CHyperbolicFunctionsD,1,When using sinusoidal and tanh activation functions
+MLAdvancedDeepLearning,CHyperbolicFunctionsD,1,Advanced Deep Learning requires at least as much knowledge as Neural Networks.
+MLModelEvaluationTechn,CApplicationsToProbab,1,"Type I and type 2 errors in classification, p-values, error functions"
+MLBiasVarianceTradeoff,CApplicationsToProbab,1,"The bias variance tradeoff requires understanding probabilistic concepts like a probability density function, mean, and variance."
+MLClassificationProble,CApplicationsToProbab,1,"Understanding probabilistic classifiers, such as Naïve Bayes, requires some knowledge of probability."
+MLRegressionProblems,CApplicationsToProbab,1,"In linear regression, the value of area under a curve comes up in the computation of the confidence intervals. Also, maximum likelihood estimation often comes up in the context of  regression, and understanding the likelihood means understanding some probability, for example, relying on Gaussian likelihoods."
+MLLearningTheory,CSequences,1,Interested in limit as amount of data -> infinity.
+MLRegressionProblems,CSeries,1,Autoregressive model of a time series
+MLGradientDescent,CConvergenceAndDiverg,1,Gradient descent will converge or diverge depending on step size
+MLGradientDescent,CTaylorSeries,1,First-order vs second-order optimization methods
+MLWorkingWithData,CPolarCoordinates,1,"Understanding different ways of representing data (e.g. polar vs cartesian coordinates) can be important for choosing features and/or transforming the data before performing machine learning on it.  On a related note, some machine learning methods use nonlinear transformations to change the data into a higher dimensional space where it becomes linearly separable (e.g. kernel methods in SVMs)."
+ALGCharacterizingRunnin,CIntroducingTheLimitC,1,The basic concept of a limit is absolutely critical to understanding how we are trying to characterize end-behavior / growth rates of a function as n -> infinity.
+ALGCharacterizingRunnin,CDeterminingTheLimits,1,Asymptotic comparison of polynomial and exponential functions is done through computing a limit. (page 65). e^x is described as a limit. (page 67). Asymptotic comparison of polynomial and exponential functions.  e^x described as the limit of (1 + x/n)^n when n --> infinity.
+ALGProbabilisticAnalysi,CDeterminingTheLimits,1,"In 5.12, the understanding of an exponential as a limit is used to give an upper bound. (page 147). Uses the limit e^x = limit of (1 + x/n)^n when n --> infinity to get an upper bound."
+ALGApproximationAlgorit,CDeterminingTheLimits,1,"In the line after 35.27, the exponential is described as a limit. (page 1129) e^x described as the limit of (1 + x/n)^n when n --> infinity"
+ALGCharacterizingRunnin,CLimitsAtInfinityAndI2,1,Limits are used to define small-oh and small-omega. (pages 60-61). Small-oh and small-omega are defined using limits at infinity
+ALGDivideAndConquer44In,CLimitsAtInfinityAndI2,1,The cases in the master theorem depend on some functions growing polynomial faster than other functions. (page 103) Asymptotic comparison of polynomial and exponential functions
+ALGProbabilisticAnalysi,CLimitsAtInfinityAndI2,1,"In 5.12, the understanding of an exponential as a limit is used to give an upper bound. (page 147). Uses the limit e^x = limit of (1 + x/n)^n when n --> infinity to get an upper bound."
+ALGApproximationAlgorit,CLimitsAtInfinityAndI2,1,"In the line after 35.27, the exponential is described as a limit. (page 1129) e^x described as the limit of (1 + x/n)^n when n --> infinity"
+ALGMatrixOperations28,CMotivatingTheNeedFor2,1,The fact that a local minimum is a critical point is used. (page 842). Use critical points to locate local extrema (learning objective 4.3.4)
+ALGMatrixOperations28,CBasicDifferentiation,1,The derivative of the square of the norm of the error vector is computed. (page 842) Uses differentiation power rule.
+ALGApproximationAlgorit,CBasicDifferentiation,1,"In 35.28, a derivative is computed to show that a function is increasing. (page 1129) Use the positivity of the derivative to conclude that the function is increasing"
+ALGApproximationAlgorit,CTheShapeOfGraphsConc,1,"In 35.28, a derivative is computed to show that a function is increasing. (page 1129) Use the positivity of the derivative to conclude that the function is increasing"
+ALGCharacterizingRunnin,CLHopitalsRuleUsingDe,1,"The characterization of a running time (e.g., in the definitions for little o and little omega) often involves the ratio of two functions that go to infinity, which is covered in the L'Hopitals rule section."
+ALGMatrixOperations28,COptimization,1,The linear regression is an optimization problem. (pages 841-844)
+ALGSummationsAppendixA,CMotivatingTheNeedFor3,1,"On pages 1150-1151, the authors discuss how it can sometimes be useful to bound discrete summations by using integrals.  The figures on page 1151 should look VERY familiar to anyone who has taught how integrals and Reimann sums relate to areas under a curve!"
+ALGProbabilisticAnalysi,CMotivatingTheNeedFor3,1,Use of integrals to bound a discrete sum is based on the understanding of how integrals relate to Riemann sums.
+ALGSummationsAppendixA,CSequences,1,Convergence of series is defined in terms of the convergence of partial sum sequence. (page 1140) Geometric and harmonic series are presented. (page 1142). Definition of a convergent series. Geometric series
+ALGSummationsAppendixA,CSeries,1,Convergence of series is defined in terms of the convergence of partial sum sequence. (page 1140) Geometric and harmonic series are presented. (page 1142). Definition of a convergent series. Geometric series
+ALGDivideAndConquer44In,CSeries,1,Geometric series is used to compute an upper bound. (page 97)
+ALGDynamicProgramming14,CSeries,1,Geometric series is used to compute a lower bound. (page 389)
+ALGQuicksort7,CSeries,1,A harmonic series is used to compute a bound. (page 184)
+ALGMediansAndOrderStati,CSeries,1,A geometric series is used to give an upper bound. (page 235)
+ALGHashTables11,CSeries,1,A geometric series is used to give an upper bound. (pages 298-299)
+ALGSummationsAppendixA,CConvergenceAndDiverg,1,Convergence of series is defined in terms of the convergence of partial sum sequence. (page 1140) Geometric and harmonic series are presented. (page 1142). Definition of a convergent series. Geometric series
+ALGSummationsAppendixA,CComparisonTests,1,"Some series are obtained by integrating or differentiating both sides of other known series, such as the geometric series. (page 1142) Some series can be approximated by integrals (pages 1150-1151). Differentiate and integrate power series term-by-term. Use the integral test to determine the convergence of a series."
+ALGProbabilisticAnalysi,CComparisonTests,1,The series is approximated by integrals in order to get lower and upper bounds. (page 152) Use ideas related to the integral test to get lower and upper bound
+ALGHeapsort6,CComparisonTests,1,A series is used to give an upper bound. The series is computed by differentiating the geometric series. (page 169) Uses the value of a series obtained by differentiating the power series to give an upper bound
+ALGHashTables11,CComparisonTests,1,The series is approximated by integrals in order to get an upper bound. (page 300) Use ideas related to the integral test to get lower and upper bound
+ALGSummationsAppendixA,CPowerSeriesAndFuncti,1,"Some series are obtained by integrating or differentiating both sides of other known series, such as the geometric series. (page 1142) Some series can be approximated by integrals (pages 1150-1151). Differentiate and integrate power series term-by-term. Use the integral test to determine the convergence of a series."
+AIProbabilisticReasoni,CIntroducingTheLimitC,1,A limit converges to the expected value. (page 455) Write expected value as a limit
+AIMultiagentDecisionMa,CIntroducingTheLimitC,1,The utility is defined as a limit. (page 605)
+AIProbabilisticProgram,CIntroducingTheLimitC,1,"Questions of whether the MCMC is ""well mixed"" are implicitly about the rate at which a function approaches a limit/asymptote.  (page 663) ""It could also be that MCMC inference has not mixed properly: if we ran 300 chains for 25 thousand or 25 million iterations, we might find a quite different
+distribution of results, perhaps indicating that the first letter is probably u rather than q."""
+AIReinforcementLearnin,CDeterminingLimitsOfF,1,The idea of the value function converging in the limit is discussed.
+AIMultiagentDecisionMa,CLimitsAtInfinitiyAnd,1,The utility is defined as a limit going to infinity. (page 605)
+AIProbabilisticReasoni,CLimitsAtInfinitiyAnd,1,"The concept of a ""stationary distribution"" implicitly requires a basic understanding of the idea of a limit as time goes to infinity."
+AIProbabilisticReasoni2,CLimitsAtInfinitiyAnd,1,"The concept of a ""stationary distribution"" implicitly requires a basic understanding of the idea of a limit as time goes to infinity."
+AILearningFromExamples,CLimitsAtInfinitiyAnd,1,"The ML version of this argues that understanding training over time requires this topic, so the same argument applies here. Further, learning theory and gradient descent are considering a sequence of points and what happens in the limit to that sequence. The chapter also discusses no-regret learning and what happens to an algorithm asymptotically."
+AIComputerVision27,CLimitsAtInfinitiyAnd,1,A limit as lambda goes to infinity is considered. (page 991) A limit to infinity is computed.
+AISearchInComplexEnvir,CMotivatingTheNeedFor2,1,One local search technique for continous spaces is steepest-hill hill climbing (aka gradient ascent) uses gradient and partial derivatives. (pages 137-139). Another technique is the Newton-Raphson method which uses the derivative. (page 139) Understand that the gradient consists of several (partial) derivatives. Use differential rules. Use Newton's method
+AIDeepLearning22,CMotivatingTheNeedFor2,1,Need to understand the overall concept of derivative (as rate of change) to understand what backprop is doing (propogating error depending on the rate of change attributed to a given neural unit).
+AIReinforcementLearnin,CMotivatingTheNeedFor2,1,"The partial derivatives of the error function are used to adjust the parameters theta_i. (pages 855, 856) The differentiation power rule is used to compute a derivative"
+AIRobotics26,CMotivatingTheNeedFor2,1,Calculus of variations is used to express J(s) as an integral in terms of theta and its derivative. (page 956) Understand derivative notation
+AIComputerVision27,CDefiningTheDerivativ,1,Edge detection with a Gaussian convolution involves calculating gradients (page 998) and understanding how they capture rates / direction of change.
+AISearchInComplexEnvir,CBasicDifferentiation,1,One local search technique for continous spaces is steepest-hill hill climbing (aka gradient ascent) uses gradient and partial derivatives. (pages 137-139). Another technique is the Newton-Raphson method which uses the derivative. (page 139) Understand that the gradient consists of several (partial) derivatives. Use differential rules. Use Newton's method
+AIMakingSimpleDecision,CBasicDifferentiation,1,The power rule is used. (page 527) Use differential rules
+AILearningFromExamples,CBasicDifferentiation,1,"The loss for linear regression is computed. (pages 695, 696) The derivative of the logistic function is computed. (page 704). The loss for linear regression is computed using differential rules. The derivative of the logistic function is computed using differential rules"
+AILearningProbabilisti,CBasicDifferentiation,1,Finding the maximum likelihood estimate requires using basic differentation rules to compute derivatives.
+AIDeepLearning22,CBasicDifferentiation,1,Computing derivatives of loss requires using basic differentiation rules as well as the chain rule.
+AIReinforcementLearnin,CBasicDifferentiation,1,"The partial derivatives of the error function are used to adjust the parameters theta_i. (pages 855, 856) The differentiation power rule is used to compute a derivative"
+AILearningFromExamples,CDerivativesOfLogarit,1,"The loss for linear regression is computed. (pages 695, 696) The derivative of the logistic function is computed. (page 704). The loss for linear regression is computed using differential rules. The derivative of the logistic function is computed using differential rules"
+AILearningProbabilisti,CDerivativesOfLogarit,1,The derivative of the log likelihood is computed. (page 776) Partial derivative of the loss function is computed. (page 777) Partial derivative of the loss function is computed. (page 780) The derivative of several log functions are computed using differential rules.
+AILearningFromExamples,CTheChainRule,1,"This chapter introduces us to gradient descent, including calculating partial derivatives of a loss function using the chain rule."
+AILearningProbabilisti,CTheChainRule,1,"The example of finding the maximum likelihood estimate requires using the chain rule (and more generally, this commonly occurs in MLEs)."
+AIDeepLearning22,CTheChainRule,1,The chain rule is used to compute the partial derivatives of the loss function. (page 806) The chain rule is used to compute partial derivatives. (page 818) The chain rule is used to compute partial derivatives. (page 825)
+AIComputerVision27,CApplicationsOfDeriva,1,"Edge detection with a Gaussian convolution involves calculating gradients (page 998) and understanding how they capture rates / direction of change.  Similarly, optical flow (page 1000) is expressed as a difference in distances at different times, giving the idea of rates as a function of spots in the image."
+AIDeepLearning22,CTheShapeOfGraphsConc,1,"The discussions of activation functions on page 804 includes discussion of derivatives and function shape: ""Notice that all of them are monotonically nondecreasing,
+which means that their derivatives g' are nonnegative"".  (see also the discussion of the ""vanishing gradient"" problem at the top of page 807.  The shape of various activation functions has proven to be quite important in the study of neural networks and deep learning!"
+AILearningFromExamples,COptimization,1,Optimizing parameters over a loss function involves applied optimization.
+AILearningProbabilisti,COptimization,1,Optimizing parameters to identify an MLE or MAP estimate is an optimization
+AIDeepLearning22,COptimization,1,Optimizing parameters over a loss function involves applied optimization.
+AIRobotics26,COptimization,1,Optial control focuses on using gradients for optimization.
+AISearchInComplexEnvir,CNewtonSMethod,1,One local search technique for continous spaces is steepest-hill hill climbing (aka gradient ascent) uses gradient and partial derivatives. (pages 137-139). Another technique is the Newton-Raphson method which uses the derivative. (page 139) Understand that the gradient consists of several (partial) derivatives. Use differential rules. Use Newton's method
+AIProbabilisticReasoni,CDefiniteIntegrals,1,"As discussed in Application to probability, a soft threshold is defined using the integral of the standard normal. Having some knowledge about the big idea of an integral seems like it would help with understanding."
+AIProbabilisticReasoni2,CDefiniteIntegrals,1,The derivation of the closed forms for the forward step require on integration.
+AILearningProbabilisti,CDefiniteIntegrals,1,"The integral of a Gaussian is taken, and the fact that this must be equal to 1 is used."
+AIRobotics26,CDefiniteIntegrals,1,Integrals are used extensively in the planning and control section.
+AIMakingSimpleDecision,CTheFundamentalTheore,1,"On page 527, ""The probability density function is the derivative of the cumulative distribution function, so the density for X , the maximum of k estimates, is..."".  I would argue that to understand the relationship between the PDF and the CDF in probability, you really need to understand the fundamental theorem of calculus (at a conceptual level)."
+AIDeepLearning22,CIndefiniteIntegralsA,1,Cross-entropy is defined in terms of an integral. Integrals are also used in the variational inference section to deal with KL divergence.
+AIProbabilisticReasoni2,CIntegralsOfExponenti,1,"The one-step predicted distribution, expressed as an integral, is computed. (page 499)"
+AILearningProbabilisti,CIntegralsOfExponenti,1,"A probability, expressed as an integral, is computed. (page 785)"
+AIProbabilisticReasoni,CApplicationToProbabi,1,A soft thereshold is defined using the integral of the standard normal distribution. (page 441)
+AIProbabilisticReasoni2,CApplicationToProbabi,1,The one-step predicted distribution is expressed as an integral. (page 497)
+AIMakingSimpleDecision,CApplicationToProbabi,1,The concept of an action stochastically domining another action is formally defined using integrals. (page 531) An example of stochastic dominacy is shown. (page 532) A reasoning based on integral is shown. (page 546)
+AILearningProbabilisti,CApplicationToProbabi,1,"A probability, expressed as an integral, is computed. (page 785)"
+AIDeepLearning22,CApplicationToProbabi,1,The cross-entry loss is defined an an integral. (page 809) The probability is expressed as an integral. (page 828) The KL divergence is expressed as an integral. (page 829)
+AIRobotics26,CApplicationToProbabi,1,The recursive filtering equation is expressed using an integral. (page 939) The functional J is expressed as an integral. (page 956) Several concepts are expressed as integrals
+AIRobotics26,CIntroducingTheConcep,1,A differential equation is solved to compute the theta function. (page 957)
+AIMakingComplexDecisio,CSeries,1,A geometric series is used. (page 572)
+AIRobotics26,CTaylorSeries,1,"Page 942.  On the right, this function is approximated by a linear function. This linear function is tangent to f at the point  t , the mean of our state estimate at time t. Such a linearization is called first degree Taylor expansion."
+CGDefiningStoringRende,CLimitsAtInfinityAndI2,1,Behaviour of Ricci blend at the two ends expressed as limits to infinity and negative infinity. (page 602)
+CGSignalProcessingConc,CContinuityDiscontinu,1,"In graphics, we often deal with functions of a continuous variable. (page 183) Discontinuity in filters are discussed. (page 205)"
+CGBlendingFunctionsBzi,CContinuityDiscontinu,1,Continuity. (page 366)
+CGComposition20201202,CMotivatingTheNeedFor2,1,The approximation tan θ ≈ θ is used for small θ. (page 538)
+CGVectorsCurvesSurface,CMotivatingTheNeedFor2,1,Understand that the gradient consists of several (partial) derivatives. (page 31) Derivative defined as a limit. (page 32) derivative interpreted as the slope of the tangent line. (page 32)
+CGTextures111111121131,CMotivatingTheNeedFor2,1,Jacobian consists of several (partial) derivatives. (page 262)
+CGArtisticPrinciplesKe,CMotivatingTheNeedFor2,1,Jacobian consists of several (partial) derivatives. (page 421) Derivative and partial derivatives defined as a limit. (page 426)
+CGBlendingFunctionsBzi,CMotivatingTheNeedFor2,1,Points where the derivative is not continuous interpreted graphically. (page 367)
+CGDefiningStoringRende,CMotivatingTheNeedFor2,1,Gradient consists of several (partial) derivatives. (page 589)
+CGSignalProcessingConc,CDefiningTheDerivativ,1,"The first derivative of a function can be approximated by a finite difference, which then can be expressed as a convolution."
+CGArtisticPrinciplesKe,CDefiningTheDerivativ,1,"Graph of a function and its derivative. (page 411) Relationship between position function, velocity function, and acceleration function. (page 414)"
+CGBlendingFunctionsBzi,CBasicDifferentiation,1,Computation of first and second derivatives of a quadratic function. (page 372)
+CGVectorsCurvesSurface,CDerivativesOfLogarit,1,"The derivatives of logarithmic and exponential functions are presented in order to argue why the natural logarithm is ""natural."" (page 16)"
+CGVectorsCurvesSurface,CImplicitDifferentiat,1,Implicit and explicit equations (page 30)
+CGBlendingFunctionsBzi,CImplicitDifferentiat,1,Implicit equation of a curve (page 360)
+CGDefiningStoringRende,CImplicitDifferentiat,1,Implicit equation for a model (page 586)
+CGSignalProcessingConc,CTheShapeOfGraphsConc,1,"The second derivative of a function can be approximated by a finite difference, which then can be expressed as a convolution."
+CGDefiningStoringRende,CNewtonSMethod,1,Newton's method applied to find intersections between rays and implicit functions.
+CGSignalProcessingConc,CMotivatingTheNeedFor3,1,The integral that used in defining the convolution is interpreted as the area under the curve of the product of two functions. (page 194) The scaling of a filter uses some reasoning that relies on the connection between integrals and areas. (page 201)
+CGGlobalIllumination23,CMotivatingTheNeedFor3,1,"The transport equation involves an integral. (pages 614, 617, 620)"
+CGSignalProcessingConc,CDefiniteIntegrals,1,Moving averages smoothing is expresssed as an integral. (page 188) Convolution of two continuous functions is defined using an integral. (page 194) 2D convolutions are defined as integrals. (page 200)
+CGDefiningStoringRende,CDefiniteIntegrals,1,Convolution surface expressed as an integral. (page 592)
+CGSignalProcessingConc,CTheFundamentalTheore,1,The computation of two box filter functions relies on computing an integral. (page 194)
+CGArtisticPrinciplesKe,CUsingIntegralsForPhy,1,Hooke's law gives a model for springs.
+CGPerception19All,CApplicationToPhysics,1,"The tristimulus values (L, M, S) are expressed as integrals of a spectral composition function. (page 497) Saying that two spectral distributions generate the same color is expressed as 3 intergal equations."
+CGAdvancedRayTracing13,CIntroducingTheConcep,1,Solve a differential equation. (page 325)
+CGArtisticPrinciplesKe,CIntroducingTheConcep,1,Moving particle introduced as an ODE.
+CGVectorsCurvesSurface,CParametricEquations,1,Parametric curves (pages 39-41)
+CGBlendingFunctionsBzi,CParametricEquations,1,Parametric equation of a curve (page 360) Arc-length parametrization. (page 363)

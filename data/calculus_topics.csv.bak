@@ -1,0 +1,43 @@
+calculus_id,calculus_name,calc_course,short_desc,display_order
+CMotivatingTheNeedF,Motivating the need for calculus & limits,Calculus I,,1
+CLimitsAtInfinityAn,Limits at infinity and infinite limits,Calculus I,,2
+CMotivatingTheNeedF2,Motivating the need for the derivative and introducing the derivative concept,Calculus I,,3
+CDefiningTheDerivat,Defining the derivative as a function,Calculus I,,4
+CBasicDifferentiati,Basic differentiation rules,Calculus I,,5
+CProductAndQuotient,Product and quotient rules,Calculus I,,6
+CTrigonometricDeriv,Trigonometric derivatives,Calculus I,,7
+CDerivativesOfLogar,Derivatives of logarithmic and exponential functions,Calculus I,,8
+CChainRule,Chain rule,Calculus I,,9
+CExtremeValues,Extreme values,Calculus I,,10
+CTheShapeOfGraphsCo,The shape of graphs (concavity),Calculus I,,11
+COptimization,Optimization,Calculus I,,12
+CNewtonSMethod,Newton's method,Calculus I,,13
+CMotivatingTheNeedF3,Motivating the need for integrals and approximating the area under curves,Calculus I,,14
+CDefiniteIntegrals,Definite integrals,Calculus I,,15
+CIntegralsOfExponen,Integrals of exponential and logarithmic functions,Calculus I,,16
+CHyperbolicFunction,Hyperbolic functions (derivatives and integrals),Calculus I,,17
+CApplicationsToProb,Applications to probability,Calculus II,,18
+CLimitsAtInfinityAn2,Limits at infinity and infinite limits,Calculus II,,19
+CSequences,Sequences,Calculus II,,20
+CSeries,Series,Calculus II,,21
+CConvergenceAndDive,Convergence and divergence,Calculus II,,22
+CTaylorSeries,Taylor series,Calculus II,,23
+CPolarCoordinates,Polar coordinates,Calculus II,,24
+CIntroducingTheLimi,Introducing the limit concept,Calculus I,,25
+CDeterminingTheLimi,Determining the limits of functions (limit laws),Calculus I,,26
+CLHopitalsRuleUsing,L'Hopitals rule (using derivatives to evaluate limits of indeterminate form),Calculus I,,27
+CComparisonTests,Comparison tests,Calculus II,,28
+CPowerSeriesAndFunc,Power series and functions,Calculus II,,29
+CDeterminingLimitsO,Determining limits of functions (graphically and numerically),Calculus I,,30
+CLimitsAtInfinitiyA,Limits at infinitiy and infinite limits,Calculus I,,31
+CTheChainRule,The chain rule,Calculus I,,32
+CApplicationsOfDeri,Applications of derivatives: rates of change & exponential models,Calculus I,,33
+CTheFundamentalTheo,The fundamental theorem of calculus,Calculus I,,34
+CIndefiniteIntegral,Indefinite integrals and the net change theorem,Calculus I,,35
+CApplicationToProba,Application to probability,Calculus II,,36
+CIntroducingTheConc,Introducing the concept of differential equations,Calculus II,,37
+CContinuityDisconti,"Continuity, discontinuities, and the intermediate value theorem",Calculus I,,38
+CImplicitDifferenti,Implicit differentiation,Calculus I,,39
+CUsingIntegralsForP,"Using integrals for physical applications (work, force, density, mass, etc.)",Calculus I,,40
+CApplicationToPhysi,Application to physics,Calculus II,,41
+CParametricEquation,Parametric equations,Calculus II,,42

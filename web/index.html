@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ETS Visualization — CSV Viewer</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js" defer></script>
+  <script src="js/app.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <h1>ETS Visualization</h1>
+    <p class="subtitle">CSV-only, interactive mapping between CS topics and Calculus topics</p>
+  </header>
+
+  <main class="layout">
+    <aside class="left">
+      <div class="panel">
+        <div class="controls">
+          <label>
+            Concentration
+            <select id="concentration-filter">
+              <option value="All">All</option>
+            </select>
+          </label>
+          <label>
+            Search
+            <input id="cs-search" type="text" placeholder="Search CS topics..." />
+          </label>
+          <div class="buttons">
+            <button id="select-all">Select all (current)</button>
+            <button id="clear-all">Clear</button>
+            <label class="toggle">
+              <input id="show-weak" type="checkbox" />
+              <span>Show strength=0 links</span>
+            </label>
+          </div>
+        </div>
+        <ul id="cs-list" class="cs-list"></ul>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div class="legend">
+        <span class="dot s2"></span> strong (2)
+        <span class="dot s1"></span> some (1)
+        <span class="dot s0"></span> weak/none (0)
+      </div>
+    </aside>
+
+    <section class="right">
+      <div id="calc-container" class="calc-container"></div>
+      <div id="details" class="details hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Data: /data/*.csv — Replace files to update. No code changes needed.</small>
+  </footer>
+</body>
+</html>
